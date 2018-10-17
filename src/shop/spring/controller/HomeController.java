@@ -1,4 +1,4 @@
-package com.spring.controller;
+package shop.spring.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
