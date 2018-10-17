@@ -15,7 +15,7 @@ public class Database {
 	public Database() {
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/zyanwoadev2", "root", "1234");
+			conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/test", "root", "1234");
 		} catch (SQLException ex) {
 			ex.printStackTrace();
 		} catch (ClassNotFoundException ex) {

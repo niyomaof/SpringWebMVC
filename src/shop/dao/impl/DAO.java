@@ -15,8 +15,6 @@ public interface DAO<T> {
 	T FindByID(T bean);
 
 	T FindByID(int id);
-	
-	T FindByUUID(String uuid);
 
 	T MappingBeans(HashMap<String, Object> map);
 }
