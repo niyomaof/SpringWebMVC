@@ -37,4 +37,19 @@ public class HomeController {
 		}
 		return model;
 	}
+	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public ModelAndView login(HttpSession session, HttpServletRequest request, HttpServletResponse response) {
+		response.setContentType("text/html;charset=UTF-8");
+
+		System.out.println("Login Page Requested");
+		ModelAndView model = new ModelAndView();
+		try {
+			
+			return model;
+		} catch (Exception e) {
+			e.getStackTrace();
+		}
+		return model;
+	}
 }

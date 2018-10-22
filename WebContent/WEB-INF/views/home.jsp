@@ -16,7 +16,7 @@ ArrayList<TestModel> testList = (ArrayList<TestModel>)request.getAttribute("test
 <%
 for(int i = 0; i < testList.size(); i++) {
 	TestModel testModel = testList.get(i);
-	out.print(testModel.getId() + ", " + testModel.getName() + " " + testModel.getSurname());
+	out.print(testModel.getId() + ", " + testModel.getName() + " " + testModel.getSurname() + "<br />");
 }
 %>
 </body>
