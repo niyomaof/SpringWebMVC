@@ -12,18 +12,18 @@ import java.util.HashMap;
 public class Database {
 
 	//*** Database info ***//
-	private static final String host = "localhost";
-	private static final String port = "3306";
-	private static final String dbName = "test";
-	private static final String user = "root";
-	private static final String passwd = "1234";
+	private static final String HOST = "localhost";
+	private static final String PORT = "3306";
+	private static final String DB_NAME = "test";
+	private static final String DB_USER = "root";
+	private static final String DB_PASSWD = "1234";
 
 	public Connection conn;
 
 	public Database() {
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mariadb://" + host + ":" + port + "/" + dbName, user, passwd);
+			conn = DriverManager.getConnection("jdbc:mariadb://" + HOST + ":" + PORT + "/" + DB_NAME, DB_USER, DB_PASSWD);
 		} catch (SQLException ex) {
 			ex.printStackTrace();
 		} catch (ClassNotFoundException ex) {
