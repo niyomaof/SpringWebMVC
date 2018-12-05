@@ -11,6 +11,7 @@ import java.util.HashMap;
 
 public class Database {
 
+	//*** Database info ***//
 	private static final String host = "localhost";
 	private static final String port = "3306";
 	private static final String dbName = "test";
