@@ -10,12 +10,19 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Database {
+
+	private static final String host = "localhost";
+	private static final String port = "3306";
+	private static final String dbName = "test";
+	private static final String user = "root";
+	private static final String passwd = "1234";
+
 	public Connection conn;
 
 	public Database() {
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/test", "root", "1234");
+			conn = DriverManager.getConnection("jdbc:mariadb://" + host + ":" + port + "/" + dbName, user, passwd);
 		} catch (SQLException ex) {
 			ex.printStackTrace();
 		} catch (ClassNotFoundException ex) {
